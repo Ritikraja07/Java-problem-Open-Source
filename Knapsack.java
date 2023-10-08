@@ -1,5 +1,5 @@
 import java.util.*;
-public class knapsack {
+public class Knapsack {
 
 		 
 	    static int max(int a, int b)
