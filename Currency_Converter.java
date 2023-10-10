@@ -7,7 +7,7 @@ import java.text.DecimalFormat;
 public class Currency_Converter {
     public static void main(String[] args) {
         // Declare variables for different currencies and create a DecimalFormat object for formatting
-        double rupee, USD, pound, code, euro, KWD,BRS;
+        double rupee, USD, pound, code, euro, KWD, BRS;
         DecimalFormat f = new DecimalFormat("##.###");
         Scanner sc = new Scanner(System.in); // Create a Scanner object for user input
         
@@ -33,7 +33,7 @@ public class Currency_Converter {
             System.out.println("Kuwati Diner :" +f.format(KWD));
 
             BRS = rupee / 16.39;
-            System.out.println("Brazilian Real:" + f.format(BRS))
+            System.out.println("Brazilian Real :" + f.format(BRS));
         }
         else if(code == 2) {
             // Conversion from US Dollars to other currencies
@@ -52,7 +52,7 @@ public class Currency_Converter {
             System.out.println("Kuwati Diner :" +f.format(KWD));
 
             BRS = USD * 5.07;
-            System.out.println("Brazilian Real:" + f.format(BRS))
+            System.out.println("Brazilian Real :" + f.format(BRS));
         }
         else if(code == 3) {
              // Conversion from Pounds to other currencies
@@ -71,7 +71,7 @@ public class Currency_Converter {
             System.out.println("Kuwati Diner :" +f.format(KWD));
 
             BRS = pound * 6.23;
-            System.out.println("Brazilian Real:" + f.format(BRS))
+            System.out.println("Brazilian Real :" + f.format(BRS));
         }
         else if(code == 4) {
             // Conversion from Euros to other currencies
@@ -90,7 +90,7 @@ public class Currency_Converter {
             System.out.println("Kuwati Diner :" +f.format(KWD));
 
             BRS = euro * 5.37;
-            System.out.println("Brazilian Real:" + f.format(BRS))
+            System.out.println("Brazilian Real :" + f.format(BRS));
         }
         else if(code == 5) {
             // Conversion from Kuwaiti Dinars to other currencies
@@ -105,7 +105,7 @@ public class Currency_Converter {
             euro = KWD * 3.02;
             System.out.println("Euro : "+f.format(euro));
             BRS = KWD * 16.41;
-            System.out.println("Brazilian Real:" + f.format(BRS))
+            System.out.println("Brazilian Real:" + f.format(BRS));
         }
         else if (code == 6){
             //Conversion from Brazilian Real to other currencies
@@ -114,13 +114,13 @@ public class Currency_Converter {
             rupee = BRS * 16.42;
             System.out.println("Rupees : "+f.format(rupee));
 
-            USD = BRS * 0,20;
+            USD = BRS * 0.20;
             System.out.println("US Dollar : "+f.format(USD));
 
             pound = BRS * 0.16;
             System.out.println("Pound :" +f.format(pound));
 
-            euro = BRS * 0,19;
+            euro = BRS * 0.19;
             System.out.println("Euro : "+f.format(euro));
 
 
