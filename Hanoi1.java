@@ -1,6 +1,10 @@
 class Hanoi1 {
     public static void cycleSort(int arr[], int n)
     {
+            if (arr == null || n <= 0) {
+            System.out.println("Input array is null or empty.");
+            return;
+        }
         int writes = 0;
         for (int cycle_start = 0; cycle_start <= n - 2; cycle_start++) {
   
