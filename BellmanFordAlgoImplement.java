@@ -1,10 +1,8 @@
-import java.io.*;
 import java.lang.*;
-import java.util.*;
 
 // A class to represent a connected, directed and weighted
 // graph
-class Graph {
+class BellmanFordAlgoImplement {
 
 	// A class to represent a weighted edge in graph
 	class Edge {
@@ -16,7 +14,7 @@ class Graph {
 	Edge edge[];
 
 	// Creates a graph with V vertices and E edges
-	Graph(int v, int e)
+	BellmanFordAlgoImplement(int v, int e)
 	{
 		V = v;
 		E = e;
@@ -29,7 +27,7 @@ class Graph {
 	// src to all other vertices using Bellman-Ford
 	// algorithm. The function also detects negative weight
 	// cycle
-	void BellmanFord(Graph graph, int src)
+	void BellmanFord(BellmanFordAlgoImplement graph, int src)
 	{
 		int V = graph.V, E = graph.E;
 		int dist[] = new int[V];
@@ -86,7 +84,7 @@ class Graph {
 		int V = 5; // Number of vertices in graph
 		int E = 8; // Number of edges in graph
 
-		Graph graph = new Graph(V, E);
+		BellmanFordAlgoImplement graph = new BellmanFordAlgoImplement(V, E);
 
 		// add edge 0-1 (or A-B in above figure)
 		graph.edge[0].src = 0;
