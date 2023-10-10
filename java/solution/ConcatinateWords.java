@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 class concatinate_word_problem {
     class Trie{
         Trie[] children;
@@ -34,7 +38,7 @@ class concatinate_word_problem {
         return (count >1 && node.isWord) ? true : false;
     }
     public List<String> findAllConcatenatedWordsInADict(String[] words) {
-        Arrays.sort(words, (a,b)-> a.length()-b.length());
+        Arrays.sort(words, (a, b)-> a.length()-b.length());
         ArrayList<String> result = new ArrayList<>();
 
         for(String word : words){
