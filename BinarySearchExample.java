@@ -1,5 +1,14 @@
 class BinarySearchExample{  
- public static void binarySearch(int arr[], int first, int last, int key){  
+ public static void binarySearch(int arr[], int first, int last, int key){
+          if (arr == null) {
+            System.out.println("Input array is null.");
+            return;
+        }
+        
+        if (first < 0 || last >= arr.length || first > last) {
+            System.out.println("Invalid search interval.");
+            return;
+        }  
    int mid = (first + last)/2;  
    while( first <= last ){  
       if ( arr[mid] < key ){  
