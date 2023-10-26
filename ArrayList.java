@@ -7,4 +7,7 @@ al.add(1);
 al.add(2);
 al.add(3);
 System.out.println(al);
+Collections.sort(a1);
+ for(String str: a1){
+  System.out.print(" "+str);
 }}
