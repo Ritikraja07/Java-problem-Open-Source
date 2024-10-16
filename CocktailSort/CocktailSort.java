@@ -1,3 +1,5 @@
+package CocktailSort;
+
 // Java program for implementation of Cocktail Sort
 public class CocktailSort 
 {
@@ -77,3 +79,4 @@ public class CocktailSort
 		ob.printArray(a);
 	}
 }
+
